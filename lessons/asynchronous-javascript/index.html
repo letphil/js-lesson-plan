@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const root = document.getElementById("root");
+
+      // make a request to https://randomuser.me/api/
+
+      // // // fetch example
+      // fetch("https://randomuser.me/api/")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     console.log(data);
+      //     const user = data.results[0];
+      //     root.innerHTML = `
+      //     <h1>${user.name.first} ${user.name.last}</h1>
+      //     <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}" />
+      //     <p>${user.email}</p>
+      //     <p>${user.location.city}, ${user.location.country}</p>
+      //   `;
+      //   });
+
+      // // async/await example
+      // async function fetchUser() {
+      //   const response = await fetch("https://randomuser.me/api/");
+      //   const data = await response.json();
+      //   console.log(data);
+      //   const user = data.results[0];
+      //   root.innerHTML = `
+      //   <h1>${user.name.first} ${user.name.last}</h1>
+      //   <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}" />
+      //   <p>${user.email}</p>
+      //   <p>${user.location.city}, ${user.location.country}</p>
+      // `;
+      // }
+
+      // fetchUser();
+
+      // // // XMLHttpRequest example
+      // const xhr = new XMLHttpRequest();
+      // xhr.open("GET", "https://randomuser.me/api/");
+      // xhr.onreadystatechange = function () {
+      //   if (xhr.readyState === 4 && xhr.status === 200) {
+      //     const data = JSON.parse(xhr.responseText);
+      //     console.log(data);
+      //     const user = data.results[0];
+      //     root.innerHTML = `
+      //     <h1>${user.name.first} ${user.name.last}</h1>
+      //     <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}" />
+      //     <p>${user.email}</p>
+      //     <p>${user.location.city}, ${user.location.country}</p>
+      //   `;
+      //   }
+      // };
+
+      // xhr.send();
+
+      // // axios example
+      // axios.get("https://randomuser.me/api/").then((response) => {
+      //   const data = response.data;
+      //   console.log(data);
+      //   const user = data.results[0];
+      //   root.innerHTML = `
+      //   <h1>${user.name.first} ${user.name.last}</h1>
+      //   <img src="${user.picture.large}" alt="${user.name.first} ${user.name.last}" />
+      //   <p>${user.email}</p>
+      //   <p>${user.location.city}, ${user.location.country}</p>
+      // `;
+      // });
+    </script>
+  </body>
+</html>

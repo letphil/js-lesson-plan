@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    #container {
+      background-color: lightgray;
+    }
+  </style>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Get element by id
+      const root = document.getElementById("root");
+      console.log(root);
+
+      // Set innerHTML
+      root.innerHTML = "<h1>Hello World</h1>";
+
+      // Set style
+      root.style.color = "red";
+      root.style.backgroundColor = "black";
+      root.style.padding = "10px";
+      root.style.margin = "10px";
+      root.style.border = "1px solid red";
+
+      // Set attribute
+      root.setAttribute("class", "container");
+      root.setAttribute("id", "container");
+
+      // Get attribute
+      console.log(root.getAttribute("class"));
+      console.log(root.getAttribute("id"));
+
+      // Remove attribute
+      root.removeAttribute("class");
+      root.removeAttribute("id");
+
+      // Get attribute
+      console.log(root.getAttribute("class"));
+      console.log(root.getAttribute("id"));
+    </script>
+  </body>
+</html>

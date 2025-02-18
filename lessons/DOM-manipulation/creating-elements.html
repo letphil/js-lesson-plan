@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Element</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      /**
+       * - Creating Elements
+       * `document.createElement`
+       * `document.createTextNode`
+       * `element.appendChild`
+       * `element.insertBefore`
+       */
+
+      // `document.createElement`
+      const h1 = document.createElement("h1");
+      h1.textContent = "Hello World";
+
+      // `document.createTextNode`
+      const text = document.createTextNode("Hello World");
+
+      // `element.appendChild`
+      const container = document.querySelector(".container");
+
+      container.appendChild(h1);
+
+      // `element.insertBefore`
+      const h2 = document.createElement("h2");
+      h2.textContent = "Hello World";
+
+      container.insertBefore(h2, h1);
+
+      // `element.appendChild`
+    </script>
+  </body>
+</html>

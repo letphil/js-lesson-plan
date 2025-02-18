@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">hello world</h1>
+      <p class="p-number-text">one</p>
+      <p class="p-number-text">two</p>
+      <p class="p-number-text">three</p>
+      <p class="p-number-text">four</p>
+      <h3>hello</h3>
+      <h3>hi</h3>
+      <h3>hey</h3>
+    </div>
+    <script>
+      const header = document.getElementById("header");
+      console.log("header =", header);
+
+      const pNumberTexts = document.getElementsByClassName("p-number-text");
+      console.log("pNumberTexts =", pNumberTexts);
+
+      const greetingsTexts = document.getElementsByTagName("h3");
+      console.log("greetingsTexts =", greetingsTexts);
+
+      const getFirstPNumberText = document.querySelector(".p-number-text");
+      console.log("getFirstPNumberText =", getFirstPNumberText);
+
+      const getPNumberTexts = document.querySelectorAll(".p-number-text");
+      console.log("getPNumberTexts =", getPNumberTexts);
+    </script>
+  </body>
+</html>

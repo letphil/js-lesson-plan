@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>removing elements</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">hello world</h1>
+      <p class="p-number-text">one</p>
+      <p class="p-number-text">two</p>
+      <p class="p-number-text">three</p>
+      <p class="p-number-text">four</p>
+      <h3>hello</h3>
+      <h3>hi</h3>
+      <h3>hey</h3>
+    </div>
+    <script>
+      /**
+       * - Removing Elements
+         - `element.removeChild`
+         - `element.remove`
+       */
+
+      const container = document.querySelector(".container");
+      const header = document.getElementById("header");
+      const pNumberTexts = document.getElementsByClassName("p-number-text");
+
+      // `element.removeChild`
+      container.removeChild(header);
+
+      // `element.remove`
+      pNumberTexts[0].remove();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying Elements</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .red-background {
+      background-color: #ff0000;
+    }
+  </style>
+  <body>
+    <div class="container"></div>
+    <script>
+      // modifying elements tutorial
+      const container = document.querySelector(".container");
+
+      /**
+       * `element.innerHTML`
+       * `element.textContent`
+       * `element.className`
+       * `element.classList`
+       * `element.style`
+       * `element.setAttribute`
+       * `element.removeAttribute`
+       */
+
+      // `element.innerHTML`
+      container.innerHTML = "<h1>Hello World</h1>";
+
+      // `element.textContent`
+      container.textContent = "Hello World";
+
+      // `element.className`
+      container.className += " red-background";
+
+      // `element.classList`
+      container.classList.add("red-background");
+
+      // `element.style`
+      container.style.color = "#ffffff";
+
+      // `element.setAttribute`
+      container.setAttribute("id", "container");
+
+      // `element.removeAttribute`
+      container.removeAttribute("id");
+
+      console.log(container);
+    </script>
+  </body>
+</html>
