@@ -1,31 +1,17 @@
-## PROJECT 1 ( simple express CRUD app )
+## Users matched server
 
-### description
+## packages
 
-    Creating simple express CRUD app
-    connect Mongo local
-    work with insomnia or postman
-    make simple UI
-    routing
+    express
+    mongodb
+    dotenv
+    path
+    axios
 
-    Adding authentication
-    signup forms ( frontend )
-    create user ( factory function )
-    field validation ( fastest validator )
-    extras: learn firebase auth
+## install
 
-    API design
-    error handling
-    data handling
-    querying database
+    npm install
 
-### extra points
+## run
 
-      add pagination
-      add search
-      add sorting
-      add filtering
-      add testing
-
-- [SETUP](./SETUP.md)
-- [DOCS](./DOCS.md)
+    npm run start
