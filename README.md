@@ -1,17 +1,6 @@
-## Users matched server
+## js-lesson-plan
 
-## packages
+[SETUP.md](SETUP.md) | [SYLLABUS.md](SYLLABUS.md)
 
-    express
-    mongodb
-    dotenv
-    path
-    axios
-
-## install
-
-    npm install
-
-## run
-
-    npm run start
+- Version Control - Git
+- Package Managers - npm, yarn, pnpm
